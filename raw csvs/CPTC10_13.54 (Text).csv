@@ -1,0 +1,191 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Consent,Team ID,Gender,Age,Degree Status,Major,Formal Education,Experience_1,Experience_2,Experience_3,Differing abilities_1,Differing abilities_2,Differing abilities_3,CD-1,CD-2,CD-3,CD-4,OC-1,OC-2,OC-3,OC-4,OC-5,Q24_1,Q24_2,Q24_3,Q24_4,Q24_5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Consent to Research
+
+
+
+Your participation in the Collegiate Penetration Testing Competition (CPTC) and related research is entirely voluntary. With your consent, the packet captures, flow and log data, images and communications associated with your participation in the CPTC will be stored and used for future academic research.
+
+
+
+This data collection for research purposes is anonymous, which means that your name and personal information will not be matched to your data profile when the data are used for research purposes. If you agree to take part in data collection during this competition, you will be assigned a random number that will be used on each survey, interview and associated with each data segment. There will be no way to link your results back to you. Therefore, data collection is anonymous.
+
+
+
+During the administrative processes associated with registering for this competition, you are required to provide personal information. To the extent allowed by law, we limit the viewing of your personal information to only those people who have a need to review it. We cannot promise complete secrecy. The Institutional Review Board, Rochester Institute of Technology and its affiliates, and other representatives of these organizations may inspect a copy of your information. Upon completion of this data collection project, your personal data will be kept for no longer than three years, after which they will be erased. If reports of studies resulting from your participation in this competition are published, or the results are presented at professional conferences, only group results or excerpts of individual data captures will be stated, without any reference to your personally identifying information.
+
+
+
+If you decide not to take part in data collection for research purposes, it will not affect your relationship with the research investigators or the competition administrators. No risks are anticipated from taking part in this competition or allowing your data to be collected for research purposes. If for any reason, at any time, you wish to stop participation in data collection for research, you may do so without having to provide explanation and without affecting your relationship with the investigators and competition administrators, or your team’s performance in the competition. You will not receive any direct benefit for participating in this research. The research will provide a more plausible understanding of cybercrimes and penetration testing education, thereby contributing to the areas of internal and external cybersecurity measures.
+
+
+
+If you have any questions, concerns, or complaints, or think that the data collection for research purposes has hurt you, please contact the competition director at:
+
+
+
+Dr. Justin Pelletier
+
+202-591-7140 (mobile) / justin.m.pelletier@rit.edu 
+
+Professor of Practice andDirector, Cyber Range and Training Center
+
+Global Cybersecurity Institute
+
+Rochester Institute of Technology, Rochester, NY 14623
+
+ 
+
+Do you consent to participate in this research?",What was your team number at this year's finals?,Please select your gender:,Please select your age group:,Please select your current degree status,My major is:,How many years have you received formal education in cybersecurity?,"How experienced, confident, and prepared are you? - How many security competitions have you participated in (not including this year's CPTC)?","How experienced, confident, and prepared are you? - How confident are you that you currently have the skills to be an effective penetration tester (1 = low, 7 = high)","How experienced, confident, and prepared are you? - How many years of penetration testing experience do you have?","On a scale from 1-5, how likely are you to *categorize yourself* according to these definitions? 
+
+(1 = this does not apply to me at all, 5 = this applies to me very much) - *Neurodiversity* is a term used to describe the range of differences in individual brain function and behavioral traits. It is regarded as part of normal variation in the human population and used especially in the context of *autistic spectrum* disorders.","On a scale from 1-5, how likely are you to *categorize yourself* according to these definitions? 
+
+(1 = this does not apply to me at all, 5 = this applies to me very much) - *Physical disability* indicates any physical limitations or disabilities that inhibit the physical function of one or more limbs such as arms or legs, or physical senses such as sight or hearing.","On a scale from 1-5, how likely are you to *categorize yourself* according to these definitions? 
+
+(1 = this does not apply to me at all, 5 = this applies to me very much) - *Psychiatric disabilities* cover a wide range of conditions, including eating disorders, post- traumatic stress disorder, anxiety disorders, depression, and other psychiatric conditions.","To what extent do the members of your team differ in their way
+of thinking?",To what extent do the members of your team differ in their knowledge and skills?,To what extent do the members of your team differ in how they view the world?,To what extent do the members of your team differ in their beliefs about what is right and wrong?,"To what extent do you agree with the following statement: ""My Coach and Captain keep me informed.""?","To what extent do you agree with the following statement: ""Sharing of knowledge is encouraged by my team in actions and not only in words.""?","To what extent do you agree with the following statement: ""We are continuously encouraged to bring new knowledge into the team.""?","To what extent do you agree with the following statement: ""We are encouraged to say what we think even if it means disagreeing with the Coach or Captain.""?","To what extent do you agree with the following statement: ""Open communication is characteristic of the team as a whole.""?","Consider your experiences with Artificial Intelligence (AI) during your preparation for the competition. Consider also your experiences with AI during the competition itself.
+
+
+On a scale from 1-5, rate the amount of control or authority granted to the AI system for each phase of penetration testing, as depicted in this diagram:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1 = no control or authority granted to Artificial Intelligence,
+                    5 = complete control or authority granted to Artificial Intelligence) - Planning (Define scope and threat models)","Consider your experiences with Artificial Intelligence (AI) during your preparation for the competition. Consider also your experiences with AI during the competition itself.
+
+
+On a scale from 1-5, rate the amount of control or authority granted to the AI system for each phase of penetration testing, as depicted in this diagram:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1 = no control or authority granted to Artificial Intelligence,
+                    5 = complete control or authority granted to Artificial Intelligence) - Scanning (Enumerate potential vulnerabilities in information systems)","Consider your experiences with Artificial Intelligence (AI) during your preparation for the competition. Consider also your experiences with AI during the competition itself.
+
+
+On a scale from 1-5, rate the amount of control or authority granted to the AI system for each phase of penetration testing, as depicted in this diagram:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1 = no control or authority granted to Artificial Intelligence,
+                    5 = complete control or authority granted to Artificial Intelligence) - Execution (Emulate an attacker to determine which vulnerabilities could be exploited)","Consider your experiences with Artificial Intelligence (AI) during your preparation for the competition. Consider also your experiences with AI during the competition itself.
+
+
+On a scale from 1-5, rate the amount of control or authority granted to the AI system for each phase of penetration testing, as depicted in this diagram:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1 = no control or authority granted to Artificial Intelligence,
+                    5 = complete control or authority granted to Artificial Intelligence) - Analysis (Consider business impacts of successful exploits)","Consider your experiences with Artificial Intelligence (AI) during your preparation for the competition. Consider also your experiences with AI during the competition itself.
+
+
+On a scale from 1-5, rate the amount of control or authority granted to the AI system for each phase of penetration testing, as depicted in this diagram:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(1 = no control or authority granted to Artificial Intelligence,
+                    5 = complete control or authority granted to Artificial Intelligence) - Output (Pentest reports provide actionable insights about organizational risk)"
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID2011""}","{""ImportId"":""QID2024""}","{""ImportId"":""QID2012""}","{""ImportId"":""QID2013""}","{""ImportId"":""QID2015""}","{""ImportId"":""QID2016_TEXT""}","{""ImportId"":""QID2014""}","{""ImportId"":""QID2017_1""}","{""ImportId"":""QID2017_4""}","{""ImportId"":""QID2017_5""}","{""ImportId"":""QID2019_0""}","{""ImportId"":""QID2019_11""}","{""ImportId"":""QID2019_12""}","{""ImportId"":""QID1""}","{""ImportId"":""QID2022""}","{""ImportId"":""QID2021""}","{""ImportId"":""QID2023""}","{""ImportId"":""QID2025""}","{""ImportId"":""QID2026""}","{""ImportId"":""QID2027""}","{""ImportId"":""QID2028""}","{""ImportId"":""QID2029""}","{""ImportId"":""QID2033_11""}","{""ImportId"":""QID2033_12""}","{""ImportId"":""QID2033_13""}","{""ImportId"":""QID2033_15""}","{""ImportId"":""QID2033_16""}"
+2025-01-20 06:30:18,2025-01-20 06:30:25,IP Address,129.21.255.82,100,7,True,2025-01-20 06:30:25,R_71YKcYKZYMz9UbF,,,,,43.0801,-77.6342,anonymous,EN,No,,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 06:30:12,2025-01-20 06:33:37,IP Address,166.194.188.109,100,205,True,2025-01-20 06:33:38,R_3EnjfVdKH5gSIiq,,,,,41.8719,-87.6589,anonymous,EN,Yes,Team 7,Male,18-24,Undergraduate/Full Time,,3+ years,5,5,4,1,1,1,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a very large extent.,The members of my team differ in how they view the world to a small extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,1,1,2,5,5
+2025-01-20 06:30:15,2025-01-20 06:33:40,IP Address,174.234.225.119,100,205,True,2025-01-20 06:33:41,R_3WFtvrWVuthYc7v,,,,,42.9685,-78.7492,anonymous,EN,Yes,Team 7,Male,18-24,Undergraduate/Full Time,Computer Science,3+ years,7,5,2,3,2,2,The members of my team differ in their way of thinking to a somewhat small extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Agree,Agree,Agree,Agree,Agree,2,1,1,3,2
+2025-01-20 06:30:05,2025-01-20 06:34:44,IP Address,129.21.255.80,100,279,True,2025-01-20 06:34:45,R_5KUBYJxjgP9hnHk,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 9,Male,18-24,Undergraduate/Full Time,Computer Science and Engineering,0 years,7,4,1,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a somewhat small extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Strongly Agree,Agree,Strongly Agree,Agree,Agree,1,1,1,1,1
+2025-01-20 06:30:18,2025-01-20 06:34:55,IP Address,174.208.34.23,100,276,True,2025-01-20 06:34:56,R_7i3aBfRFND7wuXh,,,,,43.0446,-78.7829,anonymous,EN,Yes,Team 7,Male,18-24,Undergraduate/Full Time,"Computer Science ",1 year,5,5,1,2,1,2,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat small extent.,Agree,Agree,Agree,Agree,Neither Agree nor Disagree,3,3,3,3,3
+2025-01-20 06:33:53,2025-01-20 06:38:22,IP Address,166.194.188.8,100,269,True,2025-01-20 06:38:23,R_52OdS6a4iKtV6jn,,,,,41.8719,-87.6589,anonymous,EN,Yes,Team 7,Other/Prefer not to answer,18-24,Undergraduate/Full Time,Computer Science,2 years,2,3,1,3,1,5,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a very large extent.,The members of my team differ in how they view the world to a small extent.,The members of my team differ in their beliefs about what is right and wrong to a very small extent.,Strongly Agree,Strongly Agree,Strongly Agree,Neither Agree nor Disagree,Strongly Agree,1,1,1,1,2
+2025-01-20 06:43:23,2025-01-20 06:46:07,IP Address,166.194.188.52,100,164,True,2025-01-20 06:46:08,R_66hCPhVPd5sH16z,,,,,41.8719,-87.6589,anonymous,EN,Yes,Team 12,Male,18-24,Undergraduate/Full Time,Cyber Operations,3+ years,7,6,2,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,1,1,2,2,2
+2025-01-20 06:40:08,2025-01-20 06:46:14,IP Address,174.234.250.222,100,366,True,2025-01-20 06:46:14,R_1ay7JmlnoSpI3MA,,,,,42.9685,-78.7492,anonymous,EN,Yes,Team 12,Female,18-24,Undergraduate/Full Time,"Cyber Operations ",3+ years,7,4,1,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat small extent.,Agree,Strongly Disagree,Agree,Agree,Agree,1,1,1,5,2
+2025-01-20 06:40:07,2025-01-20 06:46:55,IP Address,174.234.240.106,100,407,True,2025-01-20 06:46:56,R_7CCv1LHSEIucSWT,,,,,43.2318,-77.6607,anonymous,EN,Yes,Team 12,Male,18-24,Undergraduate/Full Time,,1 year,2,5,1,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Neither Agree nor Disagree,Agree,Agree,Agree,Agree,1,1,1,3,3
+2025-01-20 06:46:50,2025-01-20 06:49:19,IP Address,129.21.255.108,100,148,True,2025-01-20 06:49:20,R_79uDbzKVNzwXuOf,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 12,Male,18-24,Undergraduate/Full Time,Cyber Operations,3+ years,6,5,1,2,,,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a large extent.,The members of my team differ in how they view the world to a somewhat large extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Agree,Strongly Agree,Agree,Strongly Agree,Strongly Agree,1,1,3,5,5
+2025-01-20 06:43:18,2025-01-20 06:49:35,IP Address,129.21.255.74,100,376,True,2025-01-20 06:49:36,R_5nUcpuWEl1naPtp,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 6,Male,18-24,Undergraduate/Full Time,Cybersecurity,1 year,1,2,1,4,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a somewhat small extent.,The members of my team differ in their beliefs about what is right and wrong to a very small extent.,Strongly Agree,Strongly Agree,Agree,Agree,Agree,1,1,2,1,1
+2025-01-20 06:53:50,2025-01-20 07:00:01,IP Address,129.21.255.88,100,371,True,2025-01-20 07:00:02,R_6MyvZL7HRaVSvO2,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 8,Male,18-24,Undergraduate/Part Time,Computer Engineering,0 years,2,5,2,2,1,2,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Agree,Strongly Agree,Strongly Agree,Agree,Agree,1,2,3,1,2
+2025-01-20 06:59:47,2025-01-20 07:03:58,IP Address,216.79.19.19,100,250,True,2025-01-20 07:03:58,R_1C1FHUPWFXwl4Ca,,,,,41.8483,-87.6517,anonymous,EN,Yes,Team 5,Male,18-24,Undergraduate/Full Time,computer science,0 years,1,5,1,2,1,2,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a large extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Agree,Agree,Strongly Agree,Agree,Neither Agree nor Disagree,1,1,1,1,1
+2025-01-20 07:00:49,2025-01-20 07:13:53,IP Address,216.79.19.88,100,783,True,2025-01-20 07:13:54,R_3CDfKDKDh1Yu9Uw,,,,,41.8483,-87.6517,anonymous,EN,Yes,Team 11,Female,18-24,Undergraduate/Part Time,Computer Science and Cybersecurity,2 years,5,4,7,4,1,4,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a somewhat small extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat small extent.,Agree,Agree,Agree,Disagree,Strongly Disagree,4,1,1,1,2
+2025-01-20 07:46:32,2025-01-20 07:53:23,IP Address,129.21.255.77,100,411,True,2025-01-20 07:53:24,R_1MyUvemc0rYWdyP,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 8,Male,18-24,Undergraduate/Full Time,CIS,1 year,3,4,1,1,1,1,The members of my team differ in their way of thinking to a somewhat small extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a small extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Strongly Agree,Agree,Agree,Agree,Agree,1,2,1,1,1
+2025-01-20 07:52:59,2025-01-20 08:04:55,IP Address,129.21.255.79,100,715,True,2025-01-20 08:04:56,R_7IZ46mu1JAuyGsh,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 8,Male,25-29,Undergraduate/Full Time,Computer Science,1 year,4,3,1,5,2,5,The members of my team differ in their way of thinking to a somewhat small extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,1,1,1,1,1
+2025-01-20 08:18:10,2025-01-20 08:31:50,IP Address,129.21.255.108,100,820,True,2025-01-20 08:31:50,R_67jrl62hHhu907D,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 10,Male,18-24,Undergraduate/Full Time,Networks and Information Security Engineering,3+ years,7,6,2,1,1,1,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a somewhat small extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,4,4,5,5,5
+2025-01-20 09:26:58,2025-01-20 09:29:03,IP Address,129.21.255.107,100,124,True,2025-01-20 09:29:04,R_1qdAZ7Gu7S5nkhl,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 4,Male,18-24,Graduate/Full Time,Cybersecurity,3+ years,5,5,1,4,1,4,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a very large extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat large extent.,Strongly Agree,Strongly Agree,Agree,Strongly Disagree,Neither Agree nor Disagree,1,1,1,1,1
+2025-01-20 09:26:58,2025-01-20 09:29:37,IP Address,129.21.255.103,100,159,True,2025-01-20 09:29:38,R_5H6UUh65hSrfnWo,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 4,Male,18-24,Undergraduate/Full Time,"Cybersecurity ",3+ years,6,2,2,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a somewhat small extent.,The members of my team differ in how they view the world to a somewhat large extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat small extent.,Strongly Agree,Strongly Agree,Strongly Agree,Agree,Neither Agree nor Disagree,1,1,3,4,5
+2025-01-20 09:27:43,2025-01-20 09:30:37,IP Address,104.28.103.33,100,173,True,2025-01-20 09:30:37,R_5rvCXXRDQwdac37,,,,,41.6692,-83.5519,anonymous,EN,Yes,Team 4,Male,18-24,Undergraduate/Part Time,Cyber,1 year,5,5,1,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat large extent.,Strongly Agree,Agree,Agree,Agree,Agree,3,3,3,3,3
+2025-01-20 10:01:55,2025-01-20 10:02:49,IP Address,169.197.140.144,100,53,True,2025-01-20 10:02:49,R_1cH4MlOzK9j3Tfr,,,,,25.7701,-80.1928,anonymous,EN,No,,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 10:03:16,2025-01-20 10:09:55,IP Address,129.21.255.77,100,399,True,2025-01-20 10:09:55,R_1B0eUEVDs5Ak0tb,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 1,Male,18-24,Graduate/Full Time,Computer Science,3+ years,7,7,3,2,1,1,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a somewhat small extent.,Agree,Strongly Agree,Agree,Neither Agree nor Disagree,Agree,1,2,4,3,3
+2025-01-20 12:03:21,2025-01-20 12:03:45,IP Address,129.21.255.103,100,23,True,2025-01-20 12:03:46,R_12s8phTQxta8FwG,,,,,43.0801,-77.6342,anonymous,EN,No,,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 09:28:04,2025-01-20 12:05:13,IP Address,129.21.255.101,100,9429,True,2025-01-20 12:05:13,R_7GEJIPSKs5MrueJ,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 4,Male,18-24,Graduate/Full Time,cys,3+ years,5,7,2,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skills to a somewhat small extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Agree,1,1,1,1,1
+2025-01-20 12:03:15,2025-01-20 12:06:42,IP Address,104.28.55.230,100,206,True,2025-01-20 12:06:42,R_3LuMMwZY8i808S1,,,,,40.7809,-73.9502,anonymous,EN,Yes,Team 5,Male,18-24,Undergraduate/Full Time,Computer science,3+ years,5,5,3,3,3,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a somewhat large extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Agree,Agree,Agree,Neither Agree nor Disagree,Neither Agree nor Disagree,2,2,3,3,5
+2025-01-20 12:08:27,2025-01-20 12:11:54,IP Address,104.28.235.38,100,207,True,2025-01-20 12:11:55,R_1PXD5upCcdsMG9r,,,,,43.1567,-77.6107,anonymous,EN,Yes,Team 6,Male,18-24,Undergraduate/Full Time,Comp sci: cyber,3+ years,3,5,1,2,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a small extent.,The members of my team differ in their beliefs about what is right and wrong to a very small extent.,Agree,Agree,Strongly Agree,Agree,Strongly Agree,1,3,4,5,4
+2025-01-20 12:04:34,2025-01-20 12:12:04,IP Address,129.21.255.85,100,450,True,2025-01-20 12:12:05,R_5uDKMjwxJSTAsef,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 1,Male,18-24,Undergraduate/Full Time,CS,0 years,1,2,1,1,1,1,The members of my team differ in their way of thinking to a moderate extent.,The members of my team differ in their knowledge and skillsto a somewhat large extent.,The members of my team differ in how they view the world to a small extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,Strongly Agree,3,3,3,3,3
+2025-01-20 12:05:49,2025-01-20 12:15:21,IP Address,104.28.55.229,100,571,True,2025-01-20 12:15:21,R_1qeOpcjYKwlBHXh,,,,,40.7263,-73.9818,anonymous,EN,Yes,Team 1,Female,18-24,Undergraduate/Part Time,Computer Science,0 years,1,4,1,1,1,1,The members of my team differ in their way of thinking to a somewhat small extent.,The members of my team differ in their knowledge and skills to a moderate extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a moderate extent.,Agree,Agree,Strongly Agree,Strongly Agree,Strongly Agree,1,1,1,2,2
+2025-01-21 19:24:53,2025-01-21 19:28:56,IP Address,104.222.18.161,100,243,True,2025-01-21 19:28:57,R_5ojag1v1ZYhEaGJ,,,,,29.6467,-82.3284,anonymous,EN,Yes,Team 5,Male,18-24,Undergraduate/Full Time,,0 years,7,3,3,4,1,3,The members of my team differ in their way of thinking to a somewhat large extent.,The members of my team differ in their knowledge and skills to a large extent.,The members of my team differ in how they view the world to a moderate extent.,The members of my team differ in their beliefs about what is right and wrong to a small extent.,Agree,Strongly Agree,Agree,Neither Agree nor Disagree,Agree,1,1,1,1,2
+2025-01-20 06:30:32,2025-01-20 06:33:41,IP Address,129.21.255.108,50,189,False,2025-01-27 06:33:42,R_7z6GbY06TlifWf2,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 10,Male,18-24,Undergraduate/Full Time,Networks and Information Security Engineering,3+ years,7,6,2,2,1,1,,,,,,,,,,,,,,
+2025-01-20 06:30:18,2025-01-20 08:15:34,IP Address,129.21.255.105,15,6315,False,2025-01-27 08:15:35,R_3lgzckL209urs1W,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 5,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 12:00:48,2025-01-20 12:02:29,IP Address,129.21.255.94,50,101,False,2025-01-27 12:02:33,R_5DNNHuZFPaJQ1F1,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 2,Other/Prefer not to answer,Other/Prefer not to answer,Undergraduate/Full Time,Cybersecurity,2 years,7,4,1,3,,,,,,,,,,,,,,,,
+2025-01-20 12:04:19,2025-01-20 12:04:37,IP Address,174.208.47.226,15,18,False,2025-01-27 12:04:42,R_5GPN9y4ZtuQpsDT,,,,,42.9767,-78.7959,anonymous,EN,Yes,Team 7,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 12:04:39,2025-01-20 12:05:02,IP Address,216.79.19.134,10,22,False,2025-01-27 12:05:05,R_397aRjkTk0qFDhC,,,,,41.8483,-87.6517,anonymous,EN,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 12:04:34,2025-01-20 12:05:27,IP Address,129.21.255.105,30,53,False,2025-01-27 12:05:33,R_1kELmE2Qw7tomVX,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 10,Male,18-24,Undergraduate/Full Time,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 12:04:39,2025-01-20 12:07:34,IP Address,174.208.42.224,50,174,False,2025-01-27 12:07:39,R_7gHCoKUSglInBp0,,,,,43.1394,-77.6463,anonymous,EN,Yes,Team 7,Male,18-24,Undergraduate/Full Time,Computer Science,3+ years,7,6,2,1,1,1,,,,,,,,,,,,,,
+2025-01-20 12:08:34,2025-01-20 12:08:45,IP Address,129.21.255.75,15,11,False,2025-01-27 12:08:49,R_7JYWqaHe3Peh1fP,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 4,,,,,,,,,,,,,,,,,,,,,,,,,
+2025-01-20 12:11:34,2025-01-20 12:12:05,IP Address,129.21.255.71,30,31,False,2025-01-27 12:12:10,R_5veRUnbhgUum1AB,,,,,43.0801,-77.6342,anonymous,EN,Yes,Team 1,Male,18-24,Undergraduate/Full Time,,,,,,,,,,,,,,,,,,,,,,
+2025-01-28 13:37:11,2025-01-28 13:39:07,IP Address,172.56.198.95,100,116,True,2025-01-28 13:39:08,R_6awSxjNYy7y8kdc,,,,,42.415,-71.1061,anonymous,EN,Yes,Team 6,Other/Prefer not to answer,Other/Prefer not to answer,Non-matriculated,THIS IS JUSTIN PELLETIER - THROW OUT THIS RESPONSE,2 years,4,4,4,3,,,,,,,,,,,,3,3,3,3,3
+2025-01-22 07:49:30,2025-01-22 07:49:40,IP Address,47.199.226.10,15,9,False,2025-01-29 07:49:41,R_1kwYVZQLcdIoEp3,,,,,28.0406,-82.3951,anonymous,EN,Yes,Team 4,,,,,,,,,,,,,,,,,,,,,,,,,
