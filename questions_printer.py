@@ -102,10 +102,10 @@ def main():
     for i, item in enumerate(results, start=1):
         print(f"{i}. {item['machine_header']}")
         print(f"   Question: {item['question_text']}")
-        # print(f"   Column: {item['column_number']} ({item['column_letter']})")
-        # print(f"   Question cell: row {item['question_text_row']}, col {item['column_number']}")
-        # print(f"   Answers range: {item['answer_range']}")
-        # print(f"   Rows with answers ({item['nonempty_answer_count']}): {item['nonempty_answer_rows']}")
+        print(f"   Column: {item['column_number']} ({item['column_letter']})")
+        print(f"   Question cell: row {item['question_text_row']}, col {item['column_number']}")
+        print(f"   Answers range: {item['answer_range']}")
+        print(f"   Rows with answers ({item['nonempty_answer_count']}): {item['nonempty_answer_rows']}")
         print("-" * 100)
 
     # Optional CSV export
