@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pandas as pd, csv, json
 
 def load_survey(path):
@@ -33,11 +34,33 @@ TODO: Handle the CPTC5 Q4 Slider Scale
   If we intend to pool these waves, we need to either just keep them separate or normalise Q4 to 0–1 before any comparison. 
   Label these columns with their scale type in a metadata dictionary at load time so downstream scripts don't accidentally treat them as Likert.
 """
+def normalise_q4(df):
+    q4_cols = [col for col in df.columns if col.startswith('Q4_')]
+    for col in q4_cols:
+        df[col] = df[col] / 100.0
+    return df
+
+"""
+TODO: Separate free-text columns before any numeric processing.
+
+Several columns contain open-ended text responses that will break numeric pipelines: `Major`, `Q3`, `Q5`–`Q9`, `Q11`, `Q12`, `Q15`, `Q16`, `Q30` (CPTC11 AI experience), and `Q9 - Topics`. Split these into a separate `df_text` frame keyed on `ResponseId` at load time and keep `df_numeric` containing only scale/ordinal/binary items. This also makes it easy to run NLP on the text columns independently.
+
+Note that the scenario text columns in CPTC5 have **43–75% missingness** (cascading dropout as respondents exit the scenario loop early), so any text analysis should report N per question, not just overall N.
+"""
+def split_text(df):
+    text_cols = ['Major', 'Q3', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q11', 'Q12', 'Q15', 'Q16', 'Q30', 'Q9 - Topics']
+    df_text = df[['ResponseId'] + [col for col in text_cols if col in df.columns]]
+    df_numeric = df.drop(columns=[col for col in text_cols if col in df.columns])
+    return df_numeric, df_text
 
 """
 TODO: Build a single canonical merge function
 """
+# QID-based crosswalk: maps QID -> canonical column name
+QID_CROSSWALK = {
+    'QID2011': 'Q1',
+    'QID2012': 'Q2',
+    'QID2013': 'Q3',
+    # Add more mappings as needed
+}
 
-"""
-TODO: Separate free-text columns before any numeric processing.
-"""
