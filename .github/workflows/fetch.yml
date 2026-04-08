@@ -15,7 +15,7 @@ jobs:
 
       - name: Download files
         run: |
-          wget --recursive --no-parent --no-host-directories --cut-dirs=1 --reject "index.html*" https://mirrors.rit.edu/cptc/
+          wget -e robots=off --recursive --no-parent --no-host-directories --cut-dirs=1 --reject "index.html*" https://mirrors.rit.edu/cptc/
 
       - name: Commit and Push changes
         run: |
