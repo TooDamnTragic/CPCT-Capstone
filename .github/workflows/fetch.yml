@@ -1,0 +1,26 @@
+name: Fetch Mirror
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download files
+        run: |
+          wget --recursive --no-parent --no-host-directories --cut-dirs=1 --reject "index.html*" https://mirrors.rit.edu/cptc/
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update mirror contents"
+          git push
