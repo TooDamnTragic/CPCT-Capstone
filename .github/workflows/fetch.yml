@@ -13,9 +13,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download files
+      - name: Download splunk files for CPTC8
         run: |
-          wget -e robots=off --recursive --no-parent --no-host-directories --cut-dirs=1 --reject "index.html*" https://mirrors.rit.edu/cptc/
+          wget -e robots=off --recursive --no-parent --no-host-directories --cut-dirs=1 --reject "index.html*" https://mirrors.rit.edu/cptc/cptc8/splunk-logs/
+
+      - name: Download splunk files for CPTC9
+        run: |
+          wget -e robots=off --recursive --no-parent --no-host-directories --cut-dirs=1 --reject "index.html*" https://mirrors.rit.edu/cptc/cptc9/Splunk/
 
       - name: Commit and Push changes
         run: |
