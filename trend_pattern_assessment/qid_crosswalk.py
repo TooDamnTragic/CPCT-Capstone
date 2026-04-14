@@ -11,7 +11,7 @@ Every Qualtrics export stores three header rows before data begins:
   Row 2  – ImportId JSON blob, e.g. {"ImportId":"QID2011"}
 
 The ImportId (QID) is the stable identifier that links the same question
-across waves even when the column name differs.  CPTC13 renamed almost every
+across waves even when the column name differs.  CPTC5 renamed almost every
 column (Consent → Q23, Gender → Q24, …), so the QID is the only reliable
 join key for cross-wave analysis.
 
@@ -19,8 +19,8 @@ HOW TO USE
 ----------
     from qid_crosswalk import QID_CROSSWALK, CANONICAL_NAME, QUESTION_TEXT
 
-    # Get the column name for QID2011 in CPTC13:
-    col = QID_CROSSWALK["QID2011"]["col_by_wave"]["CPTC13"]   # → "Q23"
+    # Get the column name for QID2011 in CPTC5:
+    col = QID_CROSSWALK["QID2011"]["col_by_wave"]["CPTC5"]   # → "Q23"
 
     # Get the human-readable name for any QID:
     name = CANONICAL_NAME["QID2011"]                           # → "Consent"
@@ -29,7 +29,7 @@ HOW TO USE
     text = QUESTION_TEXT["QID2011"]                            # → "Consent to Research ..."
 
     # Rename all columns in a loaded dataframe to canonical names:
-    #   df.rename(columns=wave_to_canonical("CPTC13"), inplace=True)
+    #   df.rename(columns=wave_to_canonical("CPTC5"), inplace=True)
 
 HELPER FUNCTIONS
 ----------------
@@ -49,7 +49,7 @@ HELPER FUNCTIONS
 #       "col_by_wave" : { wave_key: raw_col_name_in_that_file, ... }
 #   }
 #
-# wave keys: "CPTC8", "CPTC9", "CPTC10", "CPTC11_52", "CPTC11_55", "CPTC13"
+# wave keys: "CPTC8", "CPTC9", "CPTC10", "CPTC11_52", "CPTC11_55", "CPTC5"
 # A wave key is absent when the question did not appear in that wave.
 # CPTC11_52 and CPTC11_55 are duplicate exports of the same wave; de-duplicate
 # on ResponseId before analysis.
@@ -66,7 +66,7 @@ QID_CROSSWALK = {
         "scale": "DateTime",
         "col_by_wave": {
             "CPTC8": "StartDate", "CPTC9": "StartDate", "CPTC10": "StartDate",
-            "CPTC11_52": "StartDate", "CPTC11_55": "StartDate", "CPTC13": "StartDate",
+            "CPTC11_52": "StartDate", "CPTC11_55": "StartDate", "CPTC5": "StartDate",
         },
     },
     "endDate": {
@@ -76,7 +76,7 @@ QID_CROSSWALK = {
         "scale": "DateTime",
         "col_by_wave": {
             "CPTC8": "EndDate", "CPTC9": "EndDate", "CPTC10": "EndDate",
-            "CPTC11_52": "EndDate", "CPTC11_55": "EndDate", "CPTC13": "EndDate",
+            "CPTC11_52": "EndDate", "CPTC11_55": "EndDate", "CPTC5": "EndDate",
         },
     },
     "status": {
@@ -86,7 +86,7 @@ QID_CROSSWALK = {
         "scale": "Nominal",
         "col_by_wave": {
             "CPTC8": "Status", "CPTC9": "Status", "CPTC10": "Status",
-            "CPTC11_52": "Status", "CPTC11_55": "Status", "CPTC13": "Status",
+            "CPTC11_52": "Status", "CPTC11_55": "Status", "CPTC5": "Status",
         },
     },
     "ipAddress": {
@@ -96,7 +96,7 @@ QID_CROSSWALK = {
         "scale": "Text",
         "col_by_wave": {
             "CPTC8": "IPAddress", "CPTC9": "IPAddress", "CPTC10": "IPAddress",
-            "CPTC11_52": "IPAddress", "CPTC11_55": "IPAddress", "CPTC13": "IPAddress",
+            "CPTC11_52": "IPAddress", "CPTC11_55": "IPAddress", "CPTC5": "IPAddress",
         },
     },
     "progress": {
@@ -106,7 +106,7 @@ QID_CROSSWALK = {
         "scale": "Continuous",
         "col_by_wave": {
             "CPTC8": "Progress", "CPTC9": "Progress", "CPTC10": "Progress",
-            "CPTC11_52": "Progress", "CPTC11_55": "Progress", "CPTC13": "Progress",
+            "CPTC11_52": "Progress", "CPTC11_55": "Progress", "CPTC5": "Progress",
         },
     },
     "duration": {
@@ -117,7 +117,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "Duration (in seconds)", "CPTC9": "Duration (in seconds)",
             "CPTC10": "Duration (in seconds)", "CPTC11_52": "Duration (in seconds)",
-            "CPTC11_55": "Duration (in seconds)", "CPTC13": "Duration (in seconds)",
+            "CPTC11_55": "Duration (in seconds)", "CPTC5": "Duration (in seconds)",
         },
     },
     "finished": {
@@ -127,7 +127,7 @@ QID_CROSSWALK = {
         "scale": "Binary",
         "col_by_wave": {
             "CPTC8": "Finished", "CPTC9": "Finished", "CPTC10": "Finished",
-            "CPTC11_52": "Finished", "CPTC11_55": "Finished", "CPTC13": "Finished",
+            "CPTC11_52": "Finished", "CPTC11_55": "Finished", "CPTC5": "Finished",
         },
     },
     "recordedDate": {
@@ -137,7 +137,7 @@ QID_CROSSWALK = {
         "scale": "DateTime",
         "col_by_wave": {
             "CPTC8": "RecordedDate", "CPTC9": "RecordedDate", "CPTC10": "RecordedDate",
-            "CPTC11_52": "RecordedDate", "CPTC11_55": "RecordedDate", "CPTC13": "RecordedDate",
+            "CPTC11_52": "RecordedDate", "CPTC11_55": "RecordedDate", "CPTC5": "RecordedDate",
         },
     },
     "_recordId": {
@@ -147,7 +147,7 @@ QID_CROSSWALK = {
         "scale": "ID",
         "col_by_wave": {
             "CPTC8": "ResponseId", "CPTC9": "ResponseId", "CPTC10": "ResponseId",
-            "CPTC11_52": "ResponseId", "CPTC11_55": "ResponseId", "CPTC13": "ResponseId",
+            "CPTC11_52": "ResponseId", "CPTC11_55": "ResponseId", "CPTC5": "ResponseId",
         },
     },
     "recipientLastName": {
@@ -158,7 +158,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "RecipientLastName", "CPTC9": "RecipientLastName",
             "CPTC10": "RecipientLastName", "CPTC11_52": "RecipientLastName",
-            "CPTC11_55": "RecipientLastName", "CPTC13": "RecipientLastName",
+            "CPTC11_55": "RecipientLastName", "CPTC5": "RecipientLastName",
         },
     },
     "recipientFirstName": {
@@ -169,7 +169,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "RecipientFirstName", "CPTC9": "RecipientFirstName",
             "CPTC10": "RecipientFirstName", "CPTC11_52": "RecipientFirstName",
-            "CPTC11_55": "RecipientFirstName", "CPTC13": "RecipientFirstName",
+            "CPTC11_55": "RecipientFirstName", "CPTC5": "RecipientFirstName",
         },
     },
     "recipientEmail": {
@@ -180,7 +180,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "RecipientEmail", "CPTC9": "RecipientEmail",
             "CPTC10": "RecipientEmail", "CPTC11_52": "RecipientEmail",
-            "CPTC11_55": "RecipientEmail", "CPTC13": "RecipientEmail",
+            "CPTC11_55": "RecipientEmail", "CPTC5": "RecipientEmail",
         },
     },
     "externalDataReference": {
@@ -191,7 +191,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "ExternalReference", "CPTC9": "ExternalReference",
             "CPTC10": "ExternalReference", "CPTC11_52": "ExternalReference",
-            "CPTC11_55": "ExternalReference", "CPTC13": "ExternalReference",
+            "CPTC11_55": "ExternalReference", "CPTC5": "ExternalReference",
         },
     },
     "locationLatitude": {
@@ -202,7 +202,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "LocationLatitude", "CPTC9": "LocationLatitude",
             "CPTC10": "LocationLatitude", "CPTC11_52": "LocationLatitude",
-            "CPTC11_55": "LocationLatitude", "CPTC13": "LocationLatitude",
+            "CPTC11_55": "LocationLatitude", "CPTC5": "LocationLatitude",
         },
     },
     "locationLongitude": {
@@ -213,7 +213,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "LocationLongitude", "CPTC9": "LocationLongitude",
             "CPTC10": "LocationLongitude", "CPTC11_52": "LocationLongitude",
-            "CPTC11_55": "LocationLongitude", "CPTC13": "LocationLongitude",
+            "CPTC11_55": "LocationLongitude", "CPTC5": "LocationLongitude",
         },
     },
     "distributionChannel": {
@@ -224,7 +224,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "DistributionChannel", "CPTC9": "DistributionChannel",
             "CPTC10": "DistributionChannel", "CPTC11_52": "DistributionChannel",
-            "CPTC11_55": "DistributionChannel", "CPTC13": "DistributionChannel",
+            "CPTC11_55": "DistributionChannel", "CPTC5": "DistributionChannel",
         },
     },
     "userLanguage": {
@@ -234,7 +234,7 @@ QID_CROSSWALK = {
         "scale": "Nominal",
         "col_by_wave": {
             "CPTC8": "UserLanguage", "CPTC9": "UserLanguage", "CPTC10": "UserLanguage",
-            "CPTC11_52": "UserLanguage", "CPTC11_55": "UserLanguage", "CPTC13": "UserLanguage",
+            "CPTC11_52": "UserLanguage", "CPTC11_55": "UserLanguage", "CPTC5": "UserLanguage",
         },
     },
 
@@ -248,7 +248,7 @@ QID_CROSSWALK = {
         "scale": "Nominal (Yes / No)",
         "col_by_wave": {
             "CPTC8": "Consent", "CPTC9": "Consent", "CPTC10": "Consent",
-            "CPTC11_52": "Consent", "CPTC11_55": "Consent", "CPTC13": "Q23",
+            "CPTC11_52": "Consent", "CPTC11_55": "Consent", "CPTC5": "Q23",
         },
     },
 
@@ -260,8 +260,8 @@ QID_CROSSWALK = {
         "scale": "Nominal",
         "col_by_wave": {
             "CPTC8": "Team ID", "CPTC9": "Team ID", "CPTC10": "Team ID",
-            "CPTC11_52": "Team ID", "CPTC11_55": "Team ID",
-            # absent in CPTC13
+            "CPTC11_52": "Team ID", "CPTC11_55": "Team ID", "CPTC5": "Team ID",
+            # absent in CPTC5
         },
     },
     "QID2012": {
@@ -271,7 +271,7 @@ QID_CROSSWALK = {
         "scale": "Nominal (categorical)",
         "col_by_wave": {
             "CPTC8": "Gender", "CPTC9": "Gender", "CPTC10": "Gender",
-            "CPTC11_52": "Gender", "CPTC11_55": "Gender", "CPTC13": "Q24",
+            "CPTC11_52": "Gender", "CPTC11_55": "Gender", "CPTC5": "Q24",
         },
     },
     "QID2013": {
@@ -281,7 +281,7 @@ QID_CROSSWALK = {
         "scale": "Ordinal",
         "col_by_wave": {
             "CPTC8": "Age", "CPTC9": "Age", "CPTC10": "Age",
-            "CPTC11_52": "Age", "CPTC11_55": "Age", "CPTC13": "Q25",
+            "CPTC11_52": "Age", "CPTC11_55": "Age", "CPTC5": "Q25",
         },
     },
     "QID2014": {
@@ -292,7 +292,7 @@ QID_CROSSWALK = {
         "col_by_wave": {
             "CPTC8": "Formal Education", "CPTC9": "Formal Education",
             "CPTC10": "Formal Education", "CPTC11_52": "Formal Education",
-            "CPTC11_55": "Formal Education", "CPTC13": "Q26",
+            "CPTC11_55": "Formal Education", "CPTC5": "Q26",
         },
     },
     "QID2015": {
@@ -302,7 +302,7 @@ QID_CROSSWALK = {
         "scale": "Ordinal",
         "col_by_wave": {
             "CPTC8": "Degree Status", "CPTC9": "Degree Status", "CPTC10": "Degree Status",
-            "CPTC11_52": "Degree Status", "CPTC11_55": "Degree Status", "CPTC13": "Q27",
+            "CPTC11_52": "Degree Status", "CPTC11_55": "Degree Status", "CPTC5": "Q27",
         },
     },
     "QID2016_TEXT": {
@@ -312,7 +312,7 @@ QID_CROSSWALK = {
         "scale": "Text",
         "col_by_wave": {
             "CPTC8": "Major", "CPTC9": "Major", "CPTC10": "Major",
-            "CPTC11_52": "Major", "CPTC11_55": "Major", "CPTC13": "Q28",
+            "CPTC11_52": "Major", "CPTC11_55": "Major", "CPTC5": "Q28",
         },
     },
 
@@ -324,7 +324,7 @@ QID_CROSSWALK = {
         "scale": "Ordinal count",
         "col_by_wave": {
             "CPTC8": "Experience_1", "CPTC9": "Experience_1", "CPTC10": "Experience_1",
-            "CPTC11_52": "Experience_1", "CPTC11_55": "Experience_1", "CPTC13": "Q29_1",
+            "CPTC11_52": "Experience_1", "CPTC11_55": "Experience_1", "CPTC5": "Q29_1",
         },
     },
     "QID2017_4": {
@@ -334,7 +334,7 @@ QID_CROSSWALK = {
         "scale": "Likert 0–10",
         "col_by_wave": {
             "CPTC8": "Experience_2", "CPTC9": "Experience_2", "CPTC10": "Experience_2",
-            "CPTC11_52": "Experience_2", "CPTC11_55": "Experience_2", "CPTC13": "Q29_4",
+            "CPTC11_52": "Experience_2", "CPTC11_55": "Experience_2", "CPTC5": "Q29_4",
         },
     },
     "QID2017_5": {
@@ -344,17 +344,17 @@ QID_CROSSWALK = {
         "scale": "Ordinal / Continuous",
         "col_by_wave": {
             "CPTC8": "Experience_3", "CPTC9": "Experience_3", "CPTC10": "Experience_3",
-            "CPTC11_52": "Experience_3", "CPTC11_55": "Experience_3", "CPTC13": "Q29_5",
+            "CPTC11_52": "Experience_3", "CPTC11_55": "Experience_3", "CPTC5": "Q29_5",
         },
     },
-    # CPTC13-only experience sub-items
+    # CPTC5-only experience sub-items
     "QID2017_6": {
         "canonical": "Experience_4",
         "question_text": "How many years do you feel it takes to become an effective penetration tester?",
         "construct": "Experience & Confidence",
         "scale": "Ordinal / Continuous",
         "col_by_wave": {
-            "CPTC13": "Q29_6",
+            "CPTC5": "Q29_6",
         },
     },
     "QID2017_7": {
@@ -363,7 +363,7 @@ QID_CROSSWALK = {
         "construct": "Experience & Confidence",
         "scale": "Continuous",
         "col_by_wave": {
-            "CPTC13": "Q29_7",
+            "CPTC5": "Q29_7",
         },
     },
     "QID2017_8": {
@@ -372,18 +372,18 @@ QID_CROSSWALK = {
         "construct": "Experience & Confidence",
         "scale": "Continuous",
         "col_by_wave": {
-            "CPTC13": "Q29_8",
+            "CPTC5": "Q29_8",
         },
     },
 
-    # Career intent (CPTC13 only)
+    # Career intent (CPTC5 only)
     "QID2018": {
         "canonical": "Career Intent",
         "question_text": "Do you plan to pursue cybersecurity as a career?",
         "construct": "Demographic Controls",
         "scale": "Nominal (Yes / No)",
         "col_by_wave": {
-            "CPTC13": "Q30",
+            "CPTC5": "Q30",
         },
     },
 
@@ -422,14 +422,14 @@ QID_CROSSWALK = {
         },
     },
 
-    # CPTC13 Competition NPS
+    # CPTC5 Competition NPS
     "QID2019_NPS_GROUP": {
         "canonical": "Q31_NPS_GROUP",
         "question_text": "NPS group classification (Detractor / Passive / Promoter) for competition recommendation",
         "construct": "Competition NPS",
         "scale": "Nominal (derived)",
         "col_by_wave": {
-            "CPTC13": "Q31_NPS_GROUP",
+            "CPTC5": "Q31_NPS_GROUP",
         },
     },
     "QID2019": {
@@ -438,7 +438,7 @@ QID_CROSSWALK = {
         "construct": "Competition NPS",
         "scale": "NPS 0–10",
         "col_by_wave": {
-            "CPTC13": "Q31",
+            "CPTC5": "Q31",
         },
     },
 
@@ -487,41 +487,41 @@ QID_CROSSWALK = {
         },
     },
 
-    # CPTC13 CD-1 equivalent (slider / rank format — different instrument)
+    # CPTC5 CD-1 equivalent (slider / rank format — different instrument)
     "QID2021_1": {
         "canonical": "Q33_1",
         "question_text": "Team differs in way of thinking — choice 1 (To a very large extent)",
         "construct": "Perceived Cognitive Diversity — CD Items",
-        "scale": "Rank / nominal (CPTC13 format)",
+        "scale": "Rank / nominal (CPTC5 format)",
         "col_by_wave": {
-            "CPTC13": "Q33_1",
+            "CPTC5": "Q33_1",
         },
     },
     "QID2021_2": {
         "canonical": "Q33_2",
         "question_text": "Team differs in way of thinking — choice 2",
         "construct": "Perceived Cognitive Diversity — CD Items",
-        "scale": "Rank / nominal (CPTC13 format)",
+        "scale": "Rank / nominal (CPTC5 format)",
         "col_by_wave": {
-            "CPTC13": "Q33_2",
+            "CPTC5": "Q33_2",
         },
     },
     "QID2021_3": {
         "canonical": "Q33_3",
         "question_text": "Team differs in way of thinking — choice 3",
         "construct": "Perceived Cognitive Diversity — CD Items",
-        "scale": "Rank / nominal (CPTC13 format)",
+        "scale": "Rank / nominal (CPTC5 format)",
         "col_by_wave": {
-            "CPTC13": "Q33_3",
+            "CPTC5": "Q33_3",
         },
     },
     "QID2021_4": {
         "canonical": "Q33_4",
         "question_text": "Team differs in way of thinking — choice 4",
         "construct": "Perceived Cognitive Diversity — CD Items",
-        "scale": "Rank / nominal (CPTC13 format)",
+        "scale": "Rank / nominal (CPTC5 format)",
         "col_by_wave": {
-            "CPTC13": "Q33_4",
+            "CPTC5": "Q33_4",
         },
     },
 
@@ -691,14 +691,14 @@ QID_CROSSWALK = {
         },
     },
 
-    # Scenario-Based Cognition (CPTC13 only)
+    # Scenario-Based Cognition (CPTC5 only)
     "QID2_TEXT": {
         "canonical": "Scenario_Situation",
         "question_text": "Briefly describe a specific security situation encountered (attack plan formulation)",
         "construct": "Scenario Cognition — Situation Description",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q3",
+            "CPTC5": "Q3",
         },
     },
     "QID3_1": {
@@ -707,7 +707,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Preparedness",
         "scale": "Continuous 0–100",
         "col_by_wave": {
-            "CPTC13": "Q4_1",
+            "CPTC5": "Q4_1",
         },
     },
     "QID3_2": {
@@ -716,7 +716,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Preparedness",
         "scale": "Continuous 0–100",
         "col_by_wave": {
-            "CPTC13": "Q4_2",
+            "CPTC5": "Q4_2",
         },
     },
     "QID3_3": {
@@ -725,7 +725,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Preparedness",
         "scale": "Continuous 0–100",
         "col_by_wave": {
-            "CPTC13": "Q4_3",
+            "CPTC5": "Q4_3",
         },
     },
     "QID3_4": {
@@ -734,7 +734,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Preparedness",
         "scale": "Continuous 0–100",
         "col_by_wave": {
-            "CPTC13": "Q4_4",
+            "CPTC5": "Q4_4",
         },
     },
     "QID3_5": {
@@ -743,7 +743,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Preparedness",
         "scale": "Continuous 0–100",
         "col_by_wave": {
-            "CPTC13": "Q4_5",
+            "CPTC5": "Q4_5",
         },
     },
     "QID3_6": {
@@ -752,7 +752,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Preparedness",
         "scale": "Continuous 0–100",
         "col_by_wave": {
-            "CPTC13": "Q4_6",
+            "CPTC5": "Q4_6",
         },
     },
     "QID4_TEXT": {
@@ -761,7 +761,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Observations (Scanning)",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q5",
+            "CPTC5": "Q5",
         },
     },
     "QID5_TEXT": {
@@ -770,7 +770,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — State Assessment",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q6",
+            "CPTC5": "Q6",
         },
     },
     "QID6_TEXT": {
@@ -779,7 +779,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Option Generation",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q7",
+            "CPTC5": "Q7",
         },
     },
     "QID7_TEXT": {
@@ -788,7 +788,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Option Evaluation",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q8",
+            "CPTC5": "Q8",
         },
     },
     "QID8_TEXT": {
@@ -797,7 +797,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Option Selection",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q9",
+            "CPTC5": "Q9",
         },
     },
     "QID8_TEXT_98d09e12885144e18ddbbbc2ParTopics": {
@@ -806,7 +806,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Option Selection (NLP derived)",
         "scale": "Derived / Text",
         "col_by_wave": {
-            "CPTC13": "Q9 - Parent Topics",
+            "CPTC5": "Q9 - Parent Topics",
         },
     },
     "QID8_TEXT_98d09e12885144e18ddbbbc2Topics": {
@@ -815,7 +815,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Option Selection (NLP derived)",
         "scale": "Derived / Text",
         "col_by_wave": {
-            "CPTC13": "Q9 - Topics",
+            "CPTC5": "Q9 - Topics",
         },
     },
     "QID10_TEXT": {
@@ -824,7 +824,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Target State",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q11",
+            "CPTC5": "Q11",
         },
     },
     "QID11_TEXT": {
@@ -833,7 +833,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Task Planning",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q12",
+            "CPTC5": "Q12",
         },
     },
     "QID2003_TEXT": {
@@ -842,7 +842,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Procedure Planning",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q15",
+            "CPTC5": "Q15",
         },
     },
     "QID2004_TEXT": {
@@ -851,7 +851,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Actions Taken",
         "scale": "Free text",
         "col_by_wave": {
-            "CPTC13": "Q16",
+            "CPTC5": "Q16",
         },
     },
     "QID2005": {
@@ -860,7 +860,7 @@ QID_CROSSWALK = {
         "construct": "Scenario Cognition — Iteration",
         "scale": "Nominal (Yes / No)",
         "col_by_wave": {
-            "CPTC13": "Q17",
+            "CPTC5": "Q17",
         },
     },
 }
@@ -881,7 +881,7 @@ def wave_to_canonical(wave: str) -> dict:
 
     Example
     -------
-    >>> wave_to_canonical("CPTC13")
+    >>> wave_to_canonical("CPTC5")
     {"Q23": "Consent", "Q24": "Gender", ..., "Q9": "Scenario_OptionSelect", ...}
     """
     mapping = {}
@@ -909,7 +909,7 @@ def load_wave(path: str, wave: str, use_text: bool = True):
     ----------
     path      : path to the CSV file
     wave      : one of "CPTC8", "CPTC9", "CPTC10", "CPTC11_52",
-                "CPTC11_55", "CPTC13"
+                "CPTC11_55", "CPTC5"
     use_text  : if True, read values as text (Text_ exports);
                 set False for Nums_ exports
 
@@ -942,7 +942,7 @@ CD_COLUMNS = ["CD-1", "CD-2", "CD-3", "CD-4"]
 
 if __name__ == "__main__":
     # Print a compact crosswalk table to stdout for quick inspection
-    waves = ["CPTC8", "CPTC9", "CPTC10", "CPTC11_52", "CPTC11_55", "CPTC13"]
+    waves = ["CPTC8", "CPTC9", "CPTC10", "CPTC11_52", "CPTC11_55", "CPTC5"]
     header = f"{'QID':<45} {'Canonical':<30} " + " ".join(f"{w:<12}" for w in waves)
     print(header)
     print("-" * len(header))
