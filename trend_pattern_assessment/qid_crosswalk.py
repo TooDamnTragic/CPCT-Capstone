@@ -56,6 +56,9 @@ HELPER FUNCTIONS
 #
 # ─────────────────────────────────────────────────────────────────────────────
 
+from flask import json
+
+
 QID_CROSSWALK = {
 
     # ── Qualtrics system / metadata (camelCase ImportIds) ───────────────────
@@ -939,14 +942,23 @@ CD_RECODE = {
 
 CD_COLUMNS = ["CD-1", "CD-2", "CD-3", "CD-4"]
 
+def main():
+    waves = ["CPTC8", "CPTC9", "CPTC10", "CPTC11_52", "CPTC11_55", "CPTC5"]
+
+    output = []
+    for qid, entry in QID_CROSSWALK.items():
+        output.append({
+            "qid": qid,
+            "canonical": entry["canonical"],
+            "question_text": entry["question_text"],
+            "construct": entry["construct"],
+            "scale": entry["scale"],
+            "col_by_wave": {w: entry["col_by_wave"].get(w, None) for w in waves},
+        })
+
+    with open("cptc_qid_crosswalk.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
 
 if __name__ == "__main__":
-    # Print a compact crosswalk table to stdout for quick inspection
-    waves = ["CPTC8", "CPTC9", "CPTC10", "CPTC11_52", "CPTC11_55", "CPTC5"]
-    header = f"{'QID':<45} {'Canonical':<30} " + " ".join(f"{w:<12}" for w in waves)
-    print(header)
-    print("-" * len(header))
-    for qid, entry in QID_CROSSWALK.items():
-        cols = [entry["col_by_wave"].get(w, "—") for w in waves]
-        row = f"  {qid:<43} {entry['canonical']:<30} " + " ".join(f"{c:<12}" for c in cols)
-        print(row)
+    main()

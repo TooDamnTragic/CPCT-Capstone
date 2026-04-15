@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import pandas as pd, csv, json
+from qid_crosswalk import QID_CROSSWALK, CANONICAL_NAME, QUESTION_TEXT
 
 def load_survey(path):
     """
@@ -37,7 +38,7 @@ TODO: Handle the CPTC5 Q4 Slider Scale
 def normalise_q4(df):
     q4_cols = [col for col in df.columns if col.startswith('Q4_')]
     for col in q4_cols:
-        df[col] = df[col] / 100.0
+        df[col] = pd.to_numeric(df[col], errors='coerce') / 100.0
     return df
 
 """
@@ -54,13 +55,73 @@ def split_text(df):
     return df_numeric, df_text
 
 """
-TODO: Build a single canonical merge function
+TODO: Use QID_CROSSWALK to map column names to canonical question names.
 """
-# QID-based crosswalk: maps QID -> canonical column name
-QID_CROSSWALK = {
-    'QID2011': 'Q1',
-    'QID2012': 'Q2',
-    'QID2013': 'Q3',
-    # Add more mappings as needed
-}
+def map_to_canonical(df, question_map):
+    """
+    Map column names to canonical question names using the QID_CROSSWALK.
+        - This allows us to pool items across waves that have different column names but the same underlying question.
+        - The QID_CROSSWALK is a dictionary mapping (wave, column_name) to a canonical question name. We can use this to rename columns in each wave to their canonical names.
+    """
+    rename_map = {}
+    for col in df.columns:
+        qid = (col, question_map.get(col, ''))
+        if qid in QID_CROSSWALK:
+            rename_map[col] = QID_CROSSWALK[qid][CANONICAL_NAME]
+    df = df.rename(columns=rename_map)
+    return df
 
+def main():
+    # CPTC 5
+    df, question_map = load_survey('raw csvs/CPTC_13.57 (Nums).csv')
+    df = recode_cd(df)
+    df = normalise_q4(df)
+    df_numeric, df_text = split_text(df)
+    df_numeric = map_to_canonical(df_numeric, question_map)
+    # Save cleaned data
+    df_numeric.to_csv('cleaned/Nums_CPTC5_cleaned_numeric.csv', index=False)
+    df_text.to_csv('cleaned/Nums_CPTC5_cleaned_text.csv', index=False)
+
+    # CPTC 8
+    df, question_map = load_survey('raw csvs/CPTC8_13.56 (Nums).csv')
+    df = recode_cd(df)
+    df = normalise_q4(df)
+    df_numeric, df_text = split_text(df)
+    df_numeric = map_to_canonical(df_numeric, question_map)
+    # Save cleaned data
+    df_numeric.to_csv('cleaned/Nums_CPTC8_cleaned_numeric.csv', index=False)
+    df_text.to_csv('cleaned/Nums_CPTC8_cleaned_text.csv', index=False)
+
+    # CPTC 9
+    df, question_map = load_survey('raw csvs/CPTC9_13.55 (Nums).csv')
+    df = recode_cd(df)
+    df = normalise_q4(df)
+    df_numeric, df_text = split_text(df)
+    df_numeric = map_to_canonical(df_numeric, question_map)
+    # Save cleaned data
+    df_numeric.to_csv('cleaned/Nums_CPTC9_cleaned_numeric.csv', index=False)
+    df_text.to_csv('cleaned/Nums_CPTC9_cleaned_text.csv', index=False)
+
+    # CPTC 10
+    df, question_map = load_survey('raw csvs/CPTC10_13.54 (Nums).csv')
+    df = recode_cd(df)
+    df = normalise_q4(df)
+    df_numeric, df_text = split_text(df)
+    df_numeric = map_to_canonical(df_numeric, question_map)
+    # Save cleaned data
+    df_numeric.to_csv('cleaned/Nums_CPTC10_cleaned_numeric.csv', index=False)
+    df_text.to_csv('cleaned/Nums_CPTC10_cleaned_text.csv', index=False)
+
+    # CPTC 11
+    df, question_map = load_survey('raw csvs/CPTC11_13.55.csv')
+    df = recode_cd(df)
+    df = normalise_q4(df)
+    df_numeric, df_text = split_text(df)
+    df_numeric = map_to_canonical(df_numeric, question_map)
+    # Save cleaned data
+    df_numeric.to_csv('cleaned/Nums_CPTC11_cleaned_numeric.csv', index=False)
+    df_text.to_csv('cleaned/Nums_CPTC11_cleaned_text.csv', index=False)
+
+
+
+if __name__ == "__main__":    main()
