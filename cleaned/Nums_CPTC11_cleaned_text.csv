@@ -1,71 +1,71 @@
-ResponseId,Major,Q30
-"{""ImportId"":""_recordId""}","{""ImportId"":""QID2016_TEXT""}","{""ImportId"":""QID2039_TEXT""}"
-R_1ImxrCU4X7pvaU8,Cybersecurity,
-R_6oAWOB2B2VO7HII,,
-R_7qDj7uVfm3tLuDI,,
-R_5qqve6g6e3iRiJD,,
-R_7S9A4df6VgZVVKh,,
-R_7CONnAqtamqpSKA,,
-R_1ieVlbDybitsOj2,,
-R_1lEzUFCGUi3pAYN,,
-R_5gitzUxHgURMyeR,Cybersecurity,Nothing worked.
-R_3HDRmfLnzWYc5FL,Cybersecurity ,"What worked for us is getting to learn how to use Claude and the helpful guidance it gave. 
+WaveYear,ResponseId,Major,Q30
+,"{""ImportId"":""_recordId""}","{""ImportId"":""QID2016_TEXT""}","{""ImportId"":""QID2039_TEXT""}"
+11,R_1ImxrCU4X7pvaU8,Cybersecurity,
+11,R_6oAWOB2B2VO7HII,,
+11,R_7qDj7uVfm3tLuDI,,
+11,R_5qqve6g6e3iRiJD,,
+11,R_7S9A4df6VgZVVKh,,
+11,R_7CONnAqtamqpSKA,,
+11,R_1ieVlbDybitsOj2,,
+11,R_1lEzUFCGUi3pAYN,,
+11,R_5gitzUxHgURMyeR,Cybersecurity,Nothing worked.
+11,R_3HDRmfLnzWYc5FL,Cybersecurity ,"What worked for us is getting to learn how to use Claude and the helpful guidance it gave. 
 What didn’t work was trying to find vulnerabilities and sometime it would give the same advice so I couldn’t use it after a certain point
 "
-R_7iG4tj4OmUlvtKx,Cyber Operations,
-R_6XbV9xJk79Q0OCW,Cyber Operations,
-R_7xypQjLjMNMSOUM,,The chat worked but not the agents 
-R_7I4VyZC3fRZ2fAl,Ai in Cybersecurity,What worked was blanket testing a machine for simple vulns missed and advice on where to go next. 
-R_1t6kQGIPWcVPchv,,
-R_7P0CEF2gUkMZ4YN,Cybersecurity and Networks,Providing AI with our current understanding of the network and giving it direct instructions on how to assist our current objective in exploiting a vulnerability worked well.
-R_6WuUwiKYaoq0iF3,Computer Science,It was able to assist a lot and we learned about its capabilities more 
-R_6pmBafKLrUOpEKu,Computer Science,"Using it as a standard model for analysis and quick technical assistance was still the most helpful use case. The agents and Claude code were promising, but not effective due to our lack of experience lack of time to prepare to use this new system. Without proper planning and design of agenetic systems, Claude seemed to be pretty useless at actually finding vulnerabilities. "
-R_1YCyOBrshysEGCR,Computer Science and Mafg,I used AI a little bit to help me with classifying different findings in MITRE techniques and also thinking of ideas of business impacts of findings.
-R_6OplmDBhsLS3Mxd,Computer Science,Scanning systems for vulnerabilities somewhat worked.
-R_73dScUiVetVQ4yM,Computer Science,
-R_3ExNedAVpCquTrG,Cybersecurity,
-R_7HzxMEhHdpTeS1T,Computer Science and Mathematics ,I used it to farm credentials. I was also able to give it some special instructions (a cookie) to gain an important exploit on one of the systems.
-R_7gGeNwERzxHfKuZ,Computer Science,
-R_6qIJfSJsvDnszHs,,I had to do the AI pentesting project inject. I personally didn't utilize it outside of that. During the project the utilizing sub-agents yielded better outout.
-R_11paPeJKFhNiU0h,,
-R_1knVj0HwmAjyA3D,Comp sci,
-R_7l6NenxZEeDvJ7l,Cybersecurity ,initially we did not use AI until we were heavily influenced by the COTC team to use it
-R_70oTieA6MVEQrnv,Computer science ,
-R_1VcWfBtrmxiPsvT,Cybersecurity,It didn’t help much to be honest. The best use case I had for it was formatting payloads to save time.
-R_7ZVSbZbg9Vz5LqF,Cybersecurity ,"It was a great tool to help me find leads when we were pulling at straws. Given scans and findings, it was able to give leads where I wasn’t able to find them. "
-R_1jeWQGgYHDon3EK,Computer Science,"Using previously built systems, what didn't work was having to set a multi agent system up on the spot"
-R_7cWfavVqQKknbeV,Computer Science,"We used AI to assist with finding vulnerabilities in services. We also used it to assist in writing our report. Overall it was helpful, but it so hallucinated a lot and caused some destruction to the infrastructure."
-R_1rMGS9pjeQIuinm,computer science ,"We had ai run free with no limits other than the scope. It was able to find a few basic vulnerabilities fairly quickly, but by that time we had already found everything. It didn't find anything new."
-R_69hLypncf2co6XA,Information Technology,Finding an exploit manually and then explaining it all and having Claude Code go bananas on enumerating further within it is very strong 
-R_7QiPkShefxqRf7b,cs and math,claude --allow-dangerously-skip-permissions with ultrathink
-R_6CeN83NRMXBprDc,,"It was very helpful in identifying the systems, their uses, and potential vulnerabilities."
-R_6iIY6GlHuQ8l6Wl,CIS,Using it as a tool to gather information and research
-R_3nF84Os2Hmb3ijn,Computer Science,"Using AI to automate the scanning process, or help narrow down the attack vectors has been very helpful to us. What would have been hours to be testing on gets reduced down to minutes
+11,R_7iG4tj4OmUlvtKx,Cyber Operations,
+11,R_6XbV9xJk79Q0OCW,Cyber Operations,
+11,R_7xypQjLjMNMSOUM,,The chat worked but not the agents 
+11,R_7I4VyZC3fRZ2fAl,Ai in Cybersecurity,What worked was blanket testing a machine for simple vulns missed and advice on where to go next. 
+11,R_1t6kQGIPWcVPchv,,
+11,R_7P0CEF2gUkMZ4YN,Cybersecurity and Networks,Providing AI with our current understanding of the network and giving it direct instructions on how to assist our current objective in exploiting a vulnerability worked well.
+11,R_6WuUwiKYaoq0iF3,Computer Science,It was able to assist a lot and we learned about its capabilities more 
+11,R_6pmBafKLrUOpEKu,Computer Science,"Using it as a standard model for analysis and quick technical assistance was still the most helpful use case. The agents and Claude code were promising, but not effective due to our lack of experience lack of time to prepare to use this new system. Without proper planning and design of agenetic systems, Claude seemed to be pretty useless at actually finding vulnerabilities. "
+11,R_1YCyOBrshysEGCR,Computer Science and Mafg,I used AI a little bit to help me with classifying different findings in MITRE techniques and also thinking of ideas of business impacts of findings.
+11,R_6OplmDBhsLS3Mxd,Computer Science,Scanning systems for vulnerabilities somewhat worked.
+11,R_73dScUiVetVQ4yM,Computer Science,
+11,R_3ExNedAVpCquTrG,Cybersecurity,
+11,R_7HzxMEhHdpTeS1T,Computer Science and Mathematics ,I used it to farm credentials. I was also able to give it some special instructions (a cookie) to gain an important exploit on one of the systems.
+11,R_7gGeNwERzxHfKuZ,Computer Science,
+11,R_6qIJfSJsvDnszHs,,I had to do the AI pentesting project inject. I personally didn't utilize it outside of that. During the project the utilizing sub-agents yielded better outout.
+11,R_11paPeJKFhNiU0h,,
+11,R_1knVj0HwmAjyA3D,Comp sci,
+11,R_7l6NenxZEeDvJ7l,Cybersecurity ,initially we did not use AI until we were heavily influenced by the COTC team to use it
+11,R_70oTieA6MVEQrnv,Computer science ,
+11,R_1VcWfBtrmxiPsvT,Cybersecurity,It didn’t help much to be honest. The best use case I had for it was formatting payloads to save time.
+11,R_7ZVSbZbg9Vz5LqF,Cybersecurity ,"It was a great tool to help me find leads when we were pulling at straws. Given scans and findings, it was able to give leads where I wasn’t able to find them. "
+11,R_1jeWQGgYHDon3EK,Computer Science,"Using previously built systems, what didn't work was having to set a multi agent system up on the spot"
+11,R_7cWfavVqQKknbeV,Computer Science,"We used AI to assist with finding vulnerabilities in services. We also used it to assist in writing our report. Overall it was helpful, but it so hallucinated a lot and caused some destruction to the infrastructure."
+11,R_1rMGS9pjeQIuinm,computer science ,"We had ai run free with no limits other than the scope. It was able to find a few basic vulnerabilities fairly quickly, but by that time we had already found everything. It didn't find anything new."
+11,R_69hLypncf2co6XA,Information Technology,Finding an exploit manually and then explaining it all and having Claude Code go bananas on enumerating further within it is very strong 
+11,R_7QiPkShefxqRf7b,cs and math,claude --allow-dangerously-skip-permissions with ultrathink
+11,R_6CeN83NRMXBprDc,,"It was very helpful in identifying the systems, their uses, and potential vulnerabilities."
+11,R_6iIY6GlHuQ8l6Wl,CIS,Using it as a tool to gather information and research
+11,R_3nF84Os2Hmb3ijn,Computer Science,"Using AI to automate the scanning process, or help narrow down the attack vectors has been very helpful to us. What would have been hours to be testing on gets reduced down to minutes
 
 Penetration isnt always a hit for AI, I feel like it needs a lot of information before successfully attacking a machine, which is where the on hand fuzzing/exploiting comes in"
-R_1Al9Etm7Y5Vip1f,Computer Science,
-R_11c3TQPFDPB0Z7E,Computer Science,I do not use AI for any purpose.
-R_58HvaSyJthhZMkO,Computer Science,
-R_77b06BVCv5dW6T7,Computer Science,"Using AI was good for doing tedious and manual tasks, but often required supervision."
-R_6b4TeLz4eDBrv8d,Computer Science,We did not utilize AI besides simple testing as we had never used it in the past. Additionally all use of AI did not help in finding vulnerabilities or doing enumeration.
-R_1WKo6B1DdSfZIAx,Information Technology,Automation of enumeration using found exploits was very helpful; saved a lot of time on manual enumeration 
-R_5zxc86zZtQHN6Js,,It helped find vulns we missed initially. Very useful. 
-R_3P14zruMHRhgJSz,Network and information security engineering ,Used it to explore some attack paths to make sure I didn’t miss anything. I once tried to instruct it to spray some passwords and accounts got locked out
-R_7kGTHTEum2gCJKK,Cybersecurity & Privacy,deep dives into mass swathes of information dumps. sanity checks for what i know. give me ideas based on what i already tried.
-R_79tXbnfZJOa5Tzb,Cyber Security,"The planning, structuring of ideas, mapping paths and making clean modular structure to better organize findings."
-R_1rPJI17vDtlg50d,Computer Science,
-R_1wvcOulVp1KdIZ3,,
-R_3E73HH5XQj5jJ0D,"Computer Science, Mathematics","Enumeration and idea suggestions worked well. Making the boilerplate for reports worked well. We tried to use Claude to generate parts of the report, but hallucinated too much. "
-R_5OOd5aryIDGW1g9,Cybersecurity ,Used it generally for scanning and suggesting commands. Most of the output was not very useful when trying to determine AD attack vectors.
-R_1eWtIjK8B88nUMj,IT,"Fixing errors and finding nuances worked well, especially on the AD/Windows side "
-R_7lzRSqRBm9kXlAZ,,
-R_5QsXcTinfH5pUlI,,
-R_3LpbNxTRj0JS4K7,Cybersecurity,
-R_6IhkM36GEtTmpnh,computer science ,
-R_334cfDFMBQFVwc5,Cybersecurity ,
-R_3ibdCmDrRg3Vqwx,,
-R_5QGTOMssvuOSQbI,post quantum cryptography ,
-R_7dsJ9sQnuG5rhJo,,
-R_3f7BijptDGeEn7u,,
-R_7Y3oQ073g5wakpV,,
-R_5QkSCqk6zXmtsSR,Cs,
+11,R_1Al9Etm7Y5Vip1f,Computer Science,
+11,R_11c3TQPFDPB0Z7E,Computer Science,I do not use AI for any purpose.
+11,R_58HvaSyJthhZMkO,Computer Science,
+11,R_77b06BVCv5dW6T7,Computer Science,"Using AI was good for doing tedious and manual tasks, but often required supervision."
+11,R_6b4TeLz4eDBrv8d,Computer Science,We did not utilize AI besides simple testing as we had never used it in the past. Additionally all use of AI did not help in finding vulnerabilities or doing enumeration.
+11,R_1WKo6B1DdSfZIAx,Information Technology,Automation of enumeration using found exploits was very helpful; saved a lot of time on manual enumeration 
+11,R_5zxc86zZtQHN6Js,,It helped find vulns we missed initially. Very useful. 
+11,R_3P14zruMHRhgJSz,Network and information security engineering ,Used it to explore some attack paths to make sure I didn’t miss anything. I once tried to instruct it to spray some passwords and accounts got locked out
+11,R_7kGTHTEum2gCJKK,Cybersecurity & Privacy,deep dives into mass swathes of information dumps. sanity checks for what i know. give me ideas based on what i already tried.
+11,R_79tXbnfZJOa5Tzb,Cyber Security,"The planning, structuring of ideas, mapping paths and making clean modular structure to better organize findings."
+11,R_1rPJI17vDtlg50d,Computer Science,
+11,R_1wvcOulVp1KdIZ3,,
+11,R_3E73HH5XQj5jJ0D,"Computer Science, Mathematics","Enumeration and idea suggestions worked well. Making the boilerplate for reports worked well. We tried to use Claude to generate parts of the report, but hallucinated too much. "
+11,R_5OOd5aryIDGW1g9,Cybersecurity ,Used it generally for scanning and suggesting commands. Most of the output was not very useful when trying to determine AD attack vectors.
+11,R_1eWtIjK8B88nUMj,IT,"Fixing errors and finding nuances worked well, especially on the AD/Windows side "
+11,R_7lzRSqRBm9kXlAZ,,
+11,R_5QsXcTinfH5pUlI,,
+11,R_3LpbNxTRj0JS4K7,Cybersecurity,
+11,R_6IhkM36GEtTmpnh,computer science ,
+11,R_334cfDFMBQFVwc5,Cybersecurity ,
+11,R_3ibdCmDrRg3Vqwx,,
+11,R_5QGTOMssvuOSQbI,post quantum cryptography ,
+11,R_7dsJ9sQnuG5rhJo,,
+11,R_3f7BijptDGeEn7u,,
+11,R_7Y3oQ073g5wakpV,,
+11,R_5QkSCqk6zXmtsSR,Cs,
