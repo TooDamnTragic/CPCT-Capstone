@@ -11,15 +11,28 @@ def load_cleaned_data(wave):
     return pd.read_csv(f'cleaned/Nums_CPTC{wave}_cleaned_numeric.csv')
 
 def merge_waves(wave_dfs):
-    # Assuming all dataframes have a common 'respondent_id' column to merge on
-    merged_df = wave_dfs[0]
-    for df in wave_dfs[1:]:
-        merged_df = pd.merge(merged_df, df, on='respondent_id', how='outer')
+    # Merge multiple waves while avoiding duplicate columns.
+    # Strategy: set 'ResponseId' as index on each dataframe, concatenate
+    # rows, then group by ResponseId taking the first non-null value for
+    # each column. This preserves every respondent and avoids creating
+    # duplicate suffixed columns.
+    dfs = [df.set_index('ResponseId') for df in wave_dfs]
+    if not dfs:
+        return pd.DataFrame()
+    concatenated = pd.concat(dfs, axis=0, sort=False)
+    # For each ResponseId, take the first non-null value per column
+    merged_df = concatenated.groupby(level=0, sort=False).first().reset_index()
     return merged_df
 
 def main():
     wave_dfs = []
-    for wave in range(5, 12):  # Assuming waves 5 to 11
+
+    # Handle loading wave 5 separatetly
+    df = load_cleaned_data(5)
+    wave_dfs.append(df)
+
+    # Load waves 8-11
+    for wave in range(8, 12):  # Assuming waves 8 to 11
         df = load_cleaned_data(wave)
         wave_dfs.append(df)
     
